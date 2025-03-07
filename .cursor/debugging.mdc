@@ -1,7 +1,7 @@
 ---
 description: Automatically add robust debugging support to all code
 globs: "*.*"
-alwaysApply: true
+alwaysApply: False
 ---
 
 # 1. Function-Level Debugging
