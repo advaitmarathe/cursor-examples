@@ -1,0 +1,15 @@
+---
+description: Handling data structure changes that involve .proto files
+globs: *.proto
+alwaysApply: true
+---
+
+## Rules
+
+### Modifying .proto Files
+- When changes to data structures or services are needed, directly modify the `.proto` file.
+- Ensure the modifications follow Protocol Buffers syntax and best practices, such as using descriptive field names and appropriate data types.
+
+### Regenerating Code from .proto Files
+- After updating the `.proto` file, automatically regenerate the associated source code using the `protoc` compiler.
+- Use the following standard command for regeneration: protoc --proto_path=src --java_out=build src/*.proto 

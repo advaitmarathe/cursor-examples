@@ -1,0 +1,25 @@
+---
+description: Agentic Workflow Rules for Handling Development Tasks
+globs: *
+alwaysApply: true
+---
+
+## Rules
+
+### Planning
+
+- Always start by planning the task based on best practices.
+- Outline the required steps before making any changes.
+- Break down complex tasks into smaller, manageable parts.
+
+### Scanning the Codebase
+
+- Before writing new code, scan the existing codebase for reusable components or relevant code.
+- Avoid duplicating code that already exists.
+- Use existing patterns and architecture when possible.
+
+### Executing the Request
+
+- Follow the request exactly as written.
+- Do not add extra features or go beyond the specified requirements.
+- Avoid making assumptions about future needs or extending functionality without explicit instruction.

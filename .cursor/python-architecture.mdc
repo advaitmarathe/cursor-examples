@@ -1,0 +1,30 @@
+---
+description: Python Coding Style and Project Architecture Preferences
+alwaysApply: true
+---
+
+## Code Style
+
+- Follow PEP 8 standards for all Python files.
+- Use 4 spaces for indentation, no tabs.
+- Prefer single quotes (`'`) for strings unless escaping is required.
+- Add type annotations to all function signatures.
+- Limit line length to 80 characters.
+- Use `snake_case` for variables and function names.
+- Use `PascalCase` for class names.
+- Prefix private methods and variables with an underscore (`_`).
+- Avoid one-letter variable names except for indices and counters.
+
+## Architecture Preferences
+
+- Organize code into clear divided folders:
+  - `services/`: Business logic and service layers.
+  - `models/`: Data models and schemas.
+  - `controllers/`: API request and response handling.
+  - `utils/`: Helper functions and utilities.
+  - `config/`: Configuration files and environment variables.
+  - `tests/`: Testing files mirroring the project structure.
+- Keep files small and modular—each file should ideally contain one class or a cohesive set of related functions.
+- Avoid large, monolithic files by breaking down functionality into logical modules.
+- Use `__init__.py` files to manage module exports and simplify imports.
+- Organize modules by feature rather than by file type when applicable.

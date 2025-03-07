@@ -1,0 +1,23 @@
+---
+description: Guide to writing PostgreSQL queries
+globs: *.sql
+alwaysApply: true
+---
+
+## Rules
+
+- You should always use PostgreSQL syntax when working in `.sql` files.
+
+- PostgreSQL uses double quotes (`"`) for table and column names, here is a valid example:
+
+```sql
+INSERT INTO "plans" ("id", "name", "plan_type", "timestamp")
+VALUES 
+  ('1', 'Free Plan', 'PRO', CURRENT_TIMESTAMP)
+ON CONFLICT ("id") DO NOTHING;
+```
+
+- When creating queries use this as the schema reference: @schema.sql
+
+
+

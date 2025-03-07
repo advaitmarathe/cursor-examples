@@ -1,0 +1,38 @@
+---
+description: Rules to follow for App Design and Interaction Design Changes
+globs: ["*.jsx", "*.tsx", "*.css", "*.scss"]
+alwaysApply: true
+---
+
+## Rules
+
+### Styling
+
+- Use [example library] for all components.
+- Stick to predefined design tokens for colors, spacing, and typography.
+- All components should have a consistent border radius (e.g., `8px`).
+- Avoid custom CSS and inline styles.
+
+### Transitions & Animations
+
+- Use smooth, subtle transitions.
+- Limit transitions to `background-color`, `border-color`, and `transform`.
+- Avoid unnecessary animations.
+
+### Interaction Feedback
+
+- Provide immediate, clear feedback on all interactive elements.
+- Maintain consistent hover and focus states.
+- Use subtle color changes and soft shadows for interaction feedback.
+
+### Layout & Spacing
+
+- Use grid or flex layouts.
+- Stick to the standard spacing scale (`4px`, `8px`, `16px`, `32px`).
+- Ensure components are responsive by default.
+
+### Maintainability
+
+- Write reusable styles and components.
+- Avoid global styles.
+- Regularly clean up unused styles.

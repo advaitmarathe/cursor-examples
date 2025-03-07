@@ -1,0 +1,36 @@
+---
+description: SolidJS Preferences for .tsx Files
+globs: *.tsx
+alwaysApply: true
+---
+
+## Code Structure and File Organization
+
+- Use the .tsx extension for all SolidJS components containing JSX.
+- Organize files with a clear directory structure:
+  src/
+    components/
+    pages/
+    utils/
+    types/
+    App.tsx
+    index.tsx
+
+## TypeScript Configuration and Typing
+
+- Define components using the Component type from SolidJS.
+- Use explicit typing for props, events, and state.
+- Type components with children using JSX.Element.
+- Avoid using any type. Prefer specific types and interfaces to ensure type safety.
+
+## Reactive Patterns and Context Usage
+
+- Use createSignal<T>() for typed reactive state management.
+- Implement type-safe context with createContext.
+- Use SolidJS utility types like Accessor for reactivity.
+- Prefer reactive primitives like createEffect and createMemo for computed values and side effects.
+- Avoid using traditional state management libraries unless necessary.
+
+- Example:
+  import { createSignal } from 'solid-js'
+  const [count, setCount] = createSignal<number>(0)
