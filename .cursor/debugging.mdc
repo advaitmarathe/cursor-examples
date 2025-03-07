@@ -1,0 +1,26 @@
+---
+description: Automatically add robust debugging support to all code
+globs: "*.*"
+alwaysApply: true
+---
+
+# 1. Function-Level Debugging
+
+- Automatically add entry and exit logs to all functions, regardless of the programming language or framework.
+- Capture input parameters and return values to enhance traceability.
+- Implement error handling with appropriate logging methods for the language/library in use.
+- Use consistent log levels (e.g., `debug`, `info`, `warn`, `error` or their equivalents) to differentiate log severity.
+
+# 2. Critical Code Path Logging
+
+- Insert debugging statements at key execution points:
+  - Conditional branches (e.g., `if/else`, `switch`, pattern matching).
+  - Loops and iterative constructs (`for`, `while`, `foreach`, comprehensions).
+  - Async operations, callbacks, or promises (or their equivalents in the language/library).
+- Automatically log state changes and important variable values within iterative and conditional logic.
+
+# 3. Error Handling and Summary Logs
+
+- Include error logging in all exception handling blocks, capturing detailed error context.
+- Automatically suggest logging uncaught exceptions and rejected promises (or similar concepts).
+- Promote structured logging formats (e.g., JSON objects, log files, or standardized console outputs) suitable for integration with monitoring tools.
